@@ -11,7 +11,8 @@ const UrlForm = () => {
         setDownloading(true); // Start downloading
 
         try {
-            const response = await fetch('http://localhost:5000/download', { // Replace with your Flask backend URL
+            const response = await fetch('https://riptide-repo.onrender.com/download', { // Replace with your Flask backend URL
+            // const response = await fetch('https://riptide-repo.onrender.com/download', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
