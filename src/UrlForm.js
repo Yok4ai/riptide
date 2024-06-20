@@ -49,12 +49,12 @@ const UrlForm = () => {
             <form onSubmit={handleSubmit} className="centered-form">
                 <input
                     type="text"
-                    placeholder="Enter URL"
+                    placeholder="Paste Video URL"
                     value={url}
                     onChange={(e) => setUrl(e.target.value)}
                     className="url-input"
                 />
-                <button type="submit" className="submit-button">Fetch Data</button>
+                <button type="submit" className="submit-button">Download</button>
                 {error && <p className="error-message">{error}</p>}
                 {downloading && <div className="downloading-indicator"></div>}
             </form>
