@@ -14,6 +14,12 @@
 
 .App h1 {
   margin-top: 250px; /* Increase space below h1 as needed */
+  text-shadow: #780283 2px 2px 10px;
+  font-family: 'Creepster', cursive, bold;
+  font-size: 60px;
+  font-weight: bold;
+  color: #f1c9fc;
+  
 }
 
 .download-container {
@@ -21,14 +27,19 @@
 }
 
 /* Styles for the download input and button */
+.download-container input::placeholder {
+  color: rgba(49, 1, 45, 0.514); /* Hint text color */
+}
 .download-container input {
   padding: 15px;
   margin-right: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #5f2172; */
+  background-color: #eca8ff;
   border-radius: 20px;
   width: 300px;
   max-width: 100%;
+  color: rgb(0, 0, 0); /* Add this line to set regular text color to white */
 
 }
 
