@@ -1,40 +1,35 @@
 .App {
-  position: relative; /* Ensure relative positioning for z-index to work */
-  text-align: center; /* Center align text content */
-  min-height: 100vh; /* Ensure full viewport height */
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  justify-content: flex-start;
+  align-items: center;
   color: aliceblue;
   font-family: 'Creepster', cursive, bold;
   font-size: 30px;
   font-weight: bold;
-  /* font-style: italic; */
-
-  
 }
 
 .App h1 {
-  position: relative; /* Ensure it respects z-index stacking */
-  z-index: 10; /* Place h1 above other content */
+  margin-top: 250px; /* Increase space below h1 as needed */
 }
 
 .download-container {
-  margin-top: 30px;
-  position: relative; /* Ensure relative positioning for z-index to work */
-  z-index: 1; /* Ensure the download box is behind h1 */
+  margin-top: 2px; /* Adjust space between h1 and download container */
 }
 
-/* Styles for the download input and button can be adjusted here */
+/* Styles for the download input and button */
 .download-container input {
-  padding: 8px;
+  padding: 15px;
   margin-right: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
   width: 300px;
   max-width: 100%;
+
 }
 
 .download-container button {
@@ -43,10 +38,28 @@
   background-color: #780283;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
 }
 
 .download-container button:hover {
   background-color: #7a00b3;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+  transform: translate(1px, 1px);
+}
+
+.video-container {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-player {
+  width: 1500%;
+  max-width: 150%;
+  height: auto;
 }
